@@ -14,7 +14,7 @@
     <!-- Colocado descrição do site -->
     <meta name="description" content="Eu não faço Moda, eu sou a Moda, 
     Não estamos lançando uma marca estamos lançando um conceito">
-    <!-- Importando tipografia do google font -->
+    <!-- Importando tipografia do google font -- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="alinhamento">
 
             <a class="link_logo" href="#">
                 <img class="logo" src="./img/G&TO.png" alt="Logo da Geto">
@@ -55,7 +55,7 @@
 
         <h1>Página principal Jeito</h1>
 
-        <section class="quem_somos" id="quem_somos">
+        <section class="quem_somos alinhamento" id="quem_somos">
             <img class="primeira_foto" src="./img/Foto01.png" alt="Uma mãe com a filha em um parque">
             <div class="sobre">
                 <p class="sobre_titulo">Olá, somos a G&TO!</p>
@@ -72,26 +72,24 @@
         </section>
 
         <section class="imagens">
-            <div class="imgs">
+            <div class="imgs alinhamento">
 
-                <img src="./img/pexels-godisable-jacob-949670.jpg" alt="Mulher sentada em uma mesa">
-                <img src="./img/image8.png" alt="Duas mulheres tomando uma bebida gelada">
-                <img src="./img/pexels-jonas-androx-1251171.jpg" alt="Mulher usando uma roupa preta">
+                <img src="./img/01.jpg" alt="Mulher sentada em uma mesa">
+                <img src="./img/02.png" alt="Duas mulheres tomando uma bebida gelada">
+                <img src="./img/03.jpg" alt="Mulher usando uma roupa preta">
 
             </div>
         </section>
 
-        <section class="esg" id="conheca_esg">
+        <section class="esg alinhamento" id="conheca_esg">
             <div class="sobre_esg">
                 <p class="sobre_esg_titulo">O que é ESG?</p>
-                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as empresas cuidam do meio
-                    ambiente, das pessoas
-                    que trabalham com elas e de como são administradas. Por exemplo, uma empresa que usa materiais
-                    recicláveis e se preocupa em ter um ambiente de trabalho saudável para os funcionários tem uma boa
-                    nota
-                    em ESG. Isso é importante porque muitas pessoas estão preocupadas em apoiar empresas que cuidam do
-                    mundo
-                    e das pessoas, não só em ganhar dinheiro.
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as 
+                    empresas cuidam do meio ambiente, das pessoas que trabalham com elas e de como 
+                    são administradas. Por exemplo, uma empresa que usa materiais recicláveis e se preocupa 
+                    em ter um ambiente de trabalho saudável para os funcionários tem uma boa
+                    nota em ESG. Isso é importante porque muitas pessoas estão preocupadas em apoiar 
+                    empresas que cuidam do mundo e das pessoas, não só em ganhar dinheiro.
                 </p>
             </div>
             <img src="./img/esg.png" alt="Homem com blusa de frio branca">
@@ -100,6 +98,7 @@
         <section class="formulario">
             <p class="formulario_titulo">Ficou com alguma dúvida?</p>
 
+            <!-- C(criar) R(listar) U(atualizar) D(excluir) -->
             <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
                 <div>
                     <label for="name">Nome:</label>
@@ -121,7 +120,7 @@
 
         </section>
 
-        <section class="contato" id="contato">
+        <section class="contato alinhamento" id="contato">
             <p class="contato_titulo">Contato</p>
 
             <div class="conteudo_contato">
@@ -158,7 +157,6 @@
                         <p>@geto</p>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
