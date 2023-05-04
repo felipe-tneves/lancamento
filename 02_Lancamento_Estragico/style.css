@@ -36,6 +36,10 @@ header {
     display: none;
 }
 
+#fechar{
+    display: none;
+}
+
 .logo {
     width: 150px;
 }
@@ -470,6 +474,17 @@ Grandes telas: acima de 1200px */
         display: block;
         color: white;
         font-size: 55px;
+    }
+
+    #itens{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--verde);
     }
 
     .menu{
