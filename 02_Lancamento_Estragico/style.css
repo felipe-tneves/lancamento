@@ -31,6 +31,11 @@ header {
     padding-top: 20px;
 }
 
+/* Menu de hamburguer */
+#burguer{
+    display: none;
+}
+
 .logo {
     width: 150px;
 }
@@ -124,7 +129,7 @@ h1 {
     box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.4);
 }
 
-.btn_esg a{
+.btn_esg a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -229,7 +234,7 @@ form>div {
     margin: 0 auto;
 }
 
-label{
+label {
     font-size: 25px;
 }
 
@@ -238,7 +243,7 @@ input {
     padding: 20px;
 }
 
-textarea{
+textarea {
     padding: 20px;
 }
 
@@ -259,7 +264,7 @@ textarea{
 }
 
 /* Contato */
-.contato{
+.contato {
     padding: 100px 0;
 }
 
@@ -270,10 +275,14 @@ textarea{
     margin-bottom: 15px;
 }
 
+.mapa {
+    width: 580px;
+}
+
 .conteudo_contato {
     display: flex;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 .borda_mapa {
@@ -318,4 +327,233 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsividade */
+
+/* Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px */
+
+@media screen and (max-width : 1440px) {
+
+    .alinhamento{
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .sobre{
+        max-width: 500px;
+    }
+    
+    .quem_somos{
+        padding: 100px 50px;
+    }
+
+    .imgs{
+        flex-wrap: wrap;
+    }
+    
+    .esg{
+        padding: 100px 50px;
+    }
+
+    .sobre_esg_texto
+    {
+        font-size: 26px;
+    }
+    
+    .esg img {
+        width: 50%;
+    }
+
+}
+
+@media screen and ( max-width: 1200px )
+{
+    .primeira_foto{
+        width: 550px;
+    }
+
+    .esg img {
+        width: 45%;
+    }
+
+    .sobre_esg{
+        width: 480px;
+    }
+
+    .sobre_esg_texto{
+        font-size: 22px;
+    }
+}
+
+@media screen and ( max-width: 1024px )
+{
+    .quem_somos{
+        gap: 40px;
+    }
+
+    .sobre_titulo{
+        font-size: 55px;
+    }
+
+    
+    .primeira_foto{
+        width: 500px;
+    }
+    
+    .imgs > *{
+        width: 380px;
+    }
+
+    .sobre_esg_texto{
+        font-size: 20px;
+    }
+
+    .sobre_esg
+    {
+        width: 400px;
+    }
+
+    .esg img{
+        width: 50%; 
+    }
+
+    .borda_mapa{
+        width: 560px;
+        height: 420px;
+    }
+
+    .mapa
+    {
+        width: 480px;
+    }
+}
+
+@media screen and ( max-width: 900px) {
+
+    .quem_somos{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .data{
+        font-size: 85px;
+    }
+
+    .esg{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .sobre_esg{
+        width: 600px;
+    }
+
+    .conteudo_contato{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}
+
+@media screen and ( max-width: 768px ){
+
+
+    #burguer{
+        display: block;
+        color: white;
+        font-size: 55px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .quem_somos
+    {
+        flex-direction: column;
+    }
+
+    .sobre{
+        margin-top: 30px;
+    }
+
+    .data{
+        font-size: 70px;
+    }
+
+    .imgs{
+        gap: 50px;
+    }
+
+    .esg{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre_esg {
+        width: 520px;
+    }
+
+    .esg img {
+        width: 50%;
+    }
+
+    .conteudo_contato{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and ( max-width: 600px) {
+
+    #burguer{
+        display: block;
+        color: white;
+        font-size: 55px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .data {
+        font-size: 55px;
+    }
+}
+
+
+@media screen and ( max-width: 580px) {
+
+    #burguer{
+        display: block;
+        color: white;
+        font-size: 55px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .data {
+        font-size: 45px;
+    }
+
+    .esg img {
+        width: 70%;
+    }
+
+    .mapa {
+        width: 400px;
+    }
+
+    .borda_mapa {
+        width: 480px;
+    }
 }
