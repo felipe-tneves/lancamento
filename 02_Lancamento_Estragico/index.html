@@ -49,7 +49,7 @@
         }
 
         function tamanho_site() {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth > 768) {
                 itens.style.display = 'flex'
             } else {
                 itens.style.display = 'none'
@@ -82,7 +82,7 @@
             <span id="burguer" class="material-symbols-outlined" onclick="click_menu()">menu</span>
 
             <!-- Simbolo de fechar -->
-            <span id="fechar" class="material-symbols-outlined" onclick="click_menu()">close</span>
+            <!-- <span id="fechar" class="material-symbols-outlined" onclick="click_menu()">close</span> -->
 
         </nav>
     </header>
