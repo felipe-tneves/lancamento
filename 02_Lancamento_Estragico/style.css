@@ -326,7 +326,6 @@ footer {
     color: white;
     font-family: var(--font_mont);
     font-size: 19px;
-    /* text-align: center; */
     height: 50px;
     display: flex;
     align-items: center;
@@ -342,6 +341,10 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px */
 
 @media screen and (max-width : 1440px) {
+
+    /* #burguer{
+        display: none;
+    } */
 
     .alinhamento{
         width: 100%;
@@ -447,6 +450,10 @@ Grandes telas: acima de 1200px */
         margin-bottom: 30px;
     }
 
+    .sobre{
+        margin-top: 30px;
+    }
+
     .data{
         font-size: 85px;
     }
@@ -454,6 +461,7 @@ Grandes telas: acima de 1200px */
     .esg{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 50px;
     }
 
@@ -467,6 +475,14 @@ Grandes telas: acima de 1200px */
     }
 }
 
+@media screen and (min-width: 900px){
+
+    #burguer{
+        display: none;
+    }
+
+}
+
 @media screen and ( max-width: 768px ){
 
 
@@ -478,20 +494,14 @@ Grandes telas: acima de 1200px */
 
     #itens{
         position: absolute;
+        height: 92vh;
+        width: 50vw;
         top: 16vh;
         right: 0;
-        width: 50vw;
-        height: 92vh;
         flex-direction: column;
         align-items: center;
         background-color: var(--verde);
         gap: 50px;
-    }
-
-    #fechar{
-        display: block;
-        color: white;
-        font-size: 40px; 
     }
 
     .menu li{
@@ -537,7 +547,7 @@ Grandes telas: acima de 1200px */
     }
 }
 
-@media screen and ( max-width: 600px) {
+/* @media screen and ( max-width: 600px) {
 
     #burguer{
         display: block;
@@ -575,7 +585,7 @@ Grandes telas: acima de 1200px */
     .data {
         font-size: 55px;
     }
-}
+} */
 
 
 @media screen and ( max-width: 580px) {
@@ -627,5 +637,10 @@ Grandes telas: acima de 1200px */
 
     .borda_mapa {
         width: 480px;
+    }
+
+    .conteudo_contato{
+        align-items: center;
+        justify-content: center;
     }
 }
